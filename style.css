@@ -1,0 +1,841 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --white-title: #E1E1E6;
+    --white-subtitle: #FFFFFF;
+    --white-description: #C4C4CC;
+
+    --purple-500: #8257E5;
+    --green-500: #00B37E;
+
+    --black-400: #121214;
+    --black-500: #09090A;
+}
+
+
+
+body {
+    background-color: var(--black-500);
+    font-family: 'Roboto', sans-serif;
+
+    background: linear-gradient(180deg, rgba(23,17,40,1) 0%, rgba(22,17,34,1) 35%, rgba(15,12,24,1) 100%);
+
+}
+
+
+.container{
+  width: 1440px;
+  margin: auto;
+
+  padding: 0 16px;
+}
+
+
+/* PRIMEIRA DOBRA */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+
+    margin-top: 3.4375rem;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.vector {
+    height: 2.625rem;
+}
+
+
+header p {
+    color: var(--white-subtitle);
+    font-size: 1rem;
+    line-height: 20%;
+}
+
+.gap{
+    gap: 270px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+
+main h1 {
+    color: var(--white-title);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 125%;
+
+    margin-top: 4.625rem;
+
+}
+
+main span {
+    color: var(--green-500);
+}
+
+main .subtitle {
+    color: var(--white-subtitle);
+    font-size: 1.375rem;
+    line-height: 160%;
+    margin: 1rem 0 ;
+}
+
+main p {
+    color: var(--white-description);
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+button{
+    background: transparent;
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
+main button a {
+    background: transparent;
+    border: 1px solid var(--purple-500);
+    border-radius: 6px;
+    height: 50px;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    width: 256px;
+    color: var(--white-subtitle);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75rem;
+    line-height: 20%;
+
+    transition: 0.2s;
+
+    margin-top: 2rem;
+
+    text-transform: uppercase;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.button-2 {
+  background: var(--purple-500);
+  transition: 0.2s;
+}
+
+
+main button a:hover{
+    background: var(--green-500);
+    border: 1px solid var(--grenn-500);
+}
+
+/* ANIMAÇÃO ICONES DASHBOARD */
+
+.bg-dashboard{
+  position: relative;
+}
+
+.bg-dashboard .bg-bi{
+  width: 100%;
+}
+
+.icon-conjunto{
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+
+  animation: icons-hero 7s 0.5s ease infinite alternate;
+}
+
+.icon-azure-page1{
+  position: absolute;
+  right: 500px;
+  top: 50px;
+
+  animation: icons-hero 7s 1s ease infinite alternate;
+}
+
+
+.icon-direito{
+  position: absolute;
+  right: 110px;
+  bottom: 0;
+
+  animation: icons-hero 7s 2.5s ease infinite alternate;
+
+}
+
+@keyframes icons-hero{
+  0%{
+      transform: translate3d(0,0,0);
+  }
+  100%{
+      transform: translate3d(10px, -40px,0);
+  }
+}
+
+/* ANIMAÇÃO ICONES POWER BI */
+
+.icones-hero{
+  position: relative;
+  margin-left: -100px;
+
+  animation: icons-hero-bi 7s 0.3s ease infinite alternate;
+  
+}
+
+.fabric-hero{
+  width: 80px;
+
+  position: absolute;
+  top: 60px;
+  left: -80px;
+
+  animation: icons-hero-bi 7s 0.5s ease infinite alternate;
+}
+
+.power-hero{
+  width: 85px;
+
+  position: absolute;
+  top: -90px;
+  left: 130px;
+
+  animation: icons-hero-bi 7s 1s ease infinite alternate;
+}
+
+.direto-hero{
+  width: 80px;
+
+  position: absolute;
+  top: 70px;
+  right: -100px;
+
+  animation: icons-hero-bi 7s 2.5s ease infinite alternate;
+}
+
+
+@keyframes icons-hero-bi{
+  0%{
+      transform: translate3d(0,0,0);
+  }
+  100%{
+      transform: translate3d(5px, -10px,0);
+  }
+}
+
+
+/* TERCEIRA DOBRA */
+  
+  .portfolio h1 {
+    color: var(--white-title);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    text-transform: uppercase;
+
+    margin-top: 32px;
+  }
+
+  .portfolio p {
+    color: var(--white-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+  }
+  
+  .portfolio img {
+    border-radius: 8px;
+  }
+
+
+  .session-1,
+  .session-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  
+  }
+
+  .dashboard-1,
+  .dashboard-2,
+  .dashboard-3,
+  .dashboard-4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+  }
+
+  .dashboard-3,
+  .dashboard-4 {
+    margin-top: 90px;
+  }
+
+  .dashboard-1 img,
+  .dashboard-2 img,
+  .dashboard-3 img,
+  .dashboard-4 img {
+        width: 690px;
+  }
+  
+  .dashboard-1 a,
+  .dashboard-2 a,
+  .dashboard-3 a,
+  .dashboard-4 a {
+    background: transparent;
+    color: var(--purple-500);
+    border: 1px solid var(--purple-500);
+    border-radius: 6px;
+    height: 50px;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    width: 256px;
+    color: var(--white-subtitle);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75rem;
+    line-height: 20%;
+
+    transition: 0.3s;
+
+    margin-top: 2rem;
+
+    text-transform: uppercase;
+
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .dashboard-1 a:hover,
+  .dashboard-2 a:hover,
+  .dashboard-3 a:hover,
+  .dashboard-4 a:hover {
+    background: var(--green-500);
+    border: 1px solid var(--grenn-500);
+  }
+
+.dashboard-1 h1,
+.dashboard-2 h1,
+.dashboard-3 h1,
+.dashboard-4 h1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 28.204px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+
+}
+
+.dashboard-1 p,
+.dashboard-2 p,
+.dashboard-3 p,
+.dashboard-4 p {
+  color: var(--white-description);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 160%;
+  text-transform: none;
+
+  margin-bottom: 16px;
+
+  width: 690px;
+
+}
+
+.button {
+  display: flex;
+  gap: 22px;
+}
+
+.button .button-2 {
+  background: var(--purple-500);
+}
+  
+.footer-page3 h1 {
+  color: var(--white-title);
+  text-align: center;
+  margin-top: 100px;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+
+  text-transform: none;
+}
+
+.footer-page3 p {
+  color: var(--white-title);
+  text-align: center;
+
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+  letter-spacing: 8px;
+}
+
+.footer-page3 img {
+  width: 100%;
+  height: 284px;
+  margin-top: 16px;
+  margin-bottom: -100px;
+ 
+}
+
+
+/* QUARTA DOBRA */
+
+
+
+.hero4 h1 {
+  margin-top: 90px;
+
+  color: var(--white-title);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.hero4 p {
+  color: var(--white-description);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+}
+
+.card {
+  width: 335px;
+  height: 420px;
+
+  border: 1px solid var(--purple-500);
+  border-radius: 9.59px;
+
+  margin-top: 70px;
+  padding: 35px 28px 60px;
+
+}
+
+.divisor {
+  width: 5.214px;
+  height: 34.26px;
+}
+
+.card .titulo {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--white-subtitle);
+  align-items: center;
+  gap: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 160%;
+  text-transform: none;
+
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.line {
+  border: 0.5px dashed var(--green-500);
+  margin-top: 16px;
+}
+
+.footer-page4 h1 {
+  color: var(--white-title);
+  text-align: center;
+  margin-top: 100px;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+
+  text-transform: none;
+}
+
+.footer-page4 p {
+  color: var(--white-title);
+  text-align: center;
+
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+  letter-spacing: 8px;
+}
+
+.footer-page4 img {
+  width: 100%;
+  height: 284px;
+
+  margin-top: 16px;
+ 
+}
+
+/* QUINTA DOBRA - HTML DENTRO DA QUARTA DOBRA */
+
+
+.hero5 {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 86px;
+
+  padding-top: 150px;
+
+  
+}
+
+.conteudo h1 {
+  color: var(--white-title);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.conteudo p {
+  color: var(--white-description);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  margin-top: 8px;
+  margin-bottom: 56px;
+}
+
+.conteudo .text-sobre-nos {
+  width: 600px;
+  height: 414px;
+  flex-shrink: 0;
+  
+  color: var(--white-subtitle);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 125%;
+
+  text-transform: none;
+
+}
+
+.conteudo img {
+  display: block;
+  margin-top: 60px;
+}
+
+.dash-lateral {
+  display: flex;
+  gap: 32px;
+
+  height: 657px;
+}
+
+.dash-lateral .img-dash {
+  border-radius: 10px;
+}
+
+footer{
+  background: #121214;
+
+  margin-top: 150px;
+}
+
+.footer-rodape img {
+  width: 100px;
+}
+
+.footer-rodape{
+  width: 1440px;
+  margin: auto;
+  padding: 8px 32px;
+
+  color: #8D8D99;
+  font-weight: 400;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 450px){
+
+ .container{
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 16px;
+}
+
+.hero1{
+  display: flex;
+  flex-direction: column;
+}
+
+.icones-hero{
+  display: none;
+}
+
+
+
+header p {
+  font-size: 14px;
+}
+
+.logo{
+  height: 3rem;
+}
+
+.vector {
+  height: 1.625rem;
+}
+
+main h1{
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+main p{
+  font-size: 16px;
+  width: 370px;
+  
+}
+
+main .subtitle{
+  font-size: 18px;
+  width: 345px;
+}
+
+button{
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+.button-2{
+  margin: 0;
+}
+
+main button a{
+  width: 350px;
+}
+
+.bg-dashboard .bg-bi{
+  width: 350px;
+}
+
+.icon-conjunto{
+  width: 100px;
+}
+
+.icon-azure-page1{
+  width: 30px;
+  right: 1200px;
+  top: 50px;
+}
+
+.icon-direito{
+  width: 50px;
+  right: 1080px;
+  top: 100px;
+}
+
+.portfolio h1 {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.portfolio p{
+  font-size: 10px;
+}
+
+.session-1,
+.session-2{
+  flex-direction: column;
+}
+
+.dashboard-1 img, .dashboard-2 img, .dashboard-3 img, .dashboard-4 img {
+  width: 350px;
+}
+
+.dashboard-1, .dashboard-2, .dashboard-3, .dashboard-4 {
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+section {
+  align-items: flex-start;
+}
+
+.button{
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button a{
+  width: 350px;
+
+}
+
+.button .button-2{
+  margin: 0;
+}
+
+.portfolio p {
+  font-size: 14px;
+  width: 350px;
+
+  margin-bottom: -10px;
+}
+
+.footer-page3 h1{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding-top: 18px;
+
+}
+
+.footer-page3 p{
+  font-size: 10px;
+}
+
+.hero4 h1{
+  font-size: 20px;
+}
+
+.hero4 p{
+  font-size: 16px;
+  width: 350px;
+}
+
+.cards{
+  flex-direction: column;
+
+}
+
+.card{
+  margin-top: 10px;
+  height: 350px;
+}
+
+.card p{
+  width: 300px;
+
+}
+
+.hero4 h1{
+  width: 350px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding-top: 18px;
+
+  margin-top: 0;
+
+}
+
+.hero4 p {
+  font-size: 14px;
+
+}
+
+.page5{
+  flex-direction: column-reverse;
+  margin-top: -70px;
+}
+
+
+.hero5 .text-sobre-nos{
+  width: 350px;
+  font-size: 14px;
+}
+
+.hero5 img{
+  width: 250px;
+  margin: auto;
+  padding-top: 32px;
+}
+
+.dash-lateral{
+  display: none;
+}
+
+footer{
+  margin-top: 50px;
+}
+
+.footer-rodape img {
+  width: 80px;
+}
+
+.footer-rodape p{
+  font-size: 12px;
+  width: 250px;
+}
+
+}
