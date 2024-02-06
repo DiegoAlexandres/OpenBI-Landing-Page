@@ -138,7 +138,7 @@ main button a {
 }
 
 
-main button a:hover{
+.button button a:hover{
     background: var(--green-500);
     border: 1px solid var(--grenn-500);
 }
@@ -558,7 +558,7 @@ main button a:hover{
   text-transform: uppercase;
 
   margin-top: 8px;
-  margin-bottom: 56px;
+  margin-bottom: 30px;
 }
 
 .conteudo .text-sobre-nos {
@@ -593,7 +593,6 @@ main button a:hover{
 
 footer{
   background: #121214;
-
   margin-top: 150px;
 }
 
@@ -634,12 +633,12 @@ footer{
 .hero1{
   display: flex;
   flex-direction: column;
+  
 }
 
 .icones-hero{
   display: none;
 }
-
 
 
 header p {
@@ -657,17 +656,18 @@ header p {
 main h1{
   font-size: 24px;
   margin-top: 32px;
+  width: 100%;
 }
 
 main p{
-  font-size: 16px;
-  width: 370px;
+  font-size: 18px;
+  width: 100%;
   
 }
 
 main .subtitle{
   font-size: 18px;
-  width: 345px;
+  width: 100%;
 }
 
 button{
@@ -680,28 +680,26 @@ button{
   margin: 0;
 }
 
-main button a{
-  width: 350px;
-}
-
 .bg-dashboard .bg-bi{
-  width: 350px;
+  width: 100%;
 }
 
 .icon-conjunto{
-  width: 100px;
+  width: 130px;
+  left: 0px;
+  bottom: 0px;
 }
 
 .icon-azure-page1{
   width: 30px;
-  right: 1200px;
+  right: 150px;
   top: 50px;
 }
 
 .icon-direito{
-  width: 50px;
-  right: 1080px;
-  top: 100px;
+  width: 80px;
+  right: 10px;
+  top: 80px;
 }
 
 .portfolio h1 {
@@ -719,7 +717,7 @@ main button a{
 }
 
 .dashboard-1 img, .dashboard-2 img, .dashboard-3 img, .dashboard-4 img {
-  width: 350px;
+  width: 100%;
 }
 
 .dashboard-1, .dashboard-2, .dashboard-3, .dashboard-4 {
@@ -737,9 +735,9 @@ section {
 }
 
 .button a{
-  width: 350px;
-
+  width: 100%;
 }
+
 
 .button .button-2{
   margin: 0;
@@ -747,7 +745,7 @@ section {
 
 .portfolio p {
   font-size: 14px;
-  width: 350px;
+  width: 100%;
 
   margin-bottom: -10px;
 }
@@ -770,7 +768,7 @@ section {
 
 .hero4 p{
   font-size: 16px;
-  width: 350px;
+  width: 100%;
 }
 
 .cards{
@@ -781,21 +779,23 @@ section {
 .card{
   margin-top: 10px;
   height: 350px;
+  width: 100%;
 }
 
 .card p{
-  width: 300px;
+  width: 100%;
 
 }
 
 .hero4 h1{
-  width: 350px;
+  width: 100%;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 16px;
-  padding-top: 18px;
+  padding-top: 45px;
 
   margin-top: 0;
+  text-align: center;
 
 }
 
@@ -804,15 +804,23 @@ section {
 
 }
 
+.hero4 .p{
+  text-align: center;
+}
+
 .page5{
   flex-direction: column-reverse;
   margin-top: -70px;
 }
 
+.hero5{
+  padding-top: 150px;
+}
 
 .hero5 .text-sobre-nos{
-  width: 350px;
+  width: 100%;
   font-size: 14px;
+
 }
 
 .hero5 img{
@@ -826,7 +834,12 @@ section {
 }
 
 footer{
-  margin-top: 50px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.footer-rodape{
+  width: 100%;
 }
 
 .footer-rodape img {
@@ -834,7 +847,7 @@ footer{
 }
 
 .footer-rodape p{
-  font-size: 12px;
+  font-size: 10px;
   width: 250px;
 }
 
